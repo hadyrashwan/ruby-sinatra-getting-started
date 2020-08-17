@@ -1,23 +1,10 @@
  
 require 'rubygems'
 require 'sinatra'
-load 'datamapper_setup.rb'
 
+load 'datamapper_models.rb'
 
-class Todo
-  include DataMapper::Resource
-
-  property :id, Serial
-  property :title, String
-  property :text, String
-  property :done , Boolean
-
-end
-
-DataMapper.auto_upgrade!
-
-
-# class TodoExample < Sinatra::Application
+# HTTP
     get '/' do
         'Use the /todo route for the todos CRUD opreations'
     end
@@ -60,6 +47,3 @@ DataMapper.auto_upgrade!
         todo.destroy!
         "Item with id: #{params['id']} is deleted"
     end
-
-# end
-
