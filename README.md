@@ -24,4 +24,4 @@ Try out ruby sinatra with sqlite3.
 
 ## Deploy on GCP
 - Change the app to use mysql [gem](https://rubygems.org/gems/dm-mysql-adapter/versions/1.2.0) instead.
-- Follow a similar approach to the ruby-on-rails [guide](https://github.com/hadyrashwan/ruby-on-rails-getting-started#deployment-on-gcp-as-serverless-).
+- Follow the same approach to the ruby-on-rails [guide](https://github.com/hadyrashwan/ruby-on-rails-getting-started#deployment-on-gcp-as-serverless-).
